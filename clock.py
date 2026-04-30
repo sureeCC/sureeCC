@@ -246,6 +246,24 @@ def run_scheduler():
 
 SCHEDULED_HOURS = {"in": 11, "out": 23}
 WINDOW_MINUTES = 30  # skip if fired more than this many minutes late
+LEAVE_FILE = os.path.join(os.path.dirname(__file__), "leave.txt")
+
+
+def load_leave_dates() -> set:
+    """Read leave.txt and return a set of date objects."""
+    leaves = set()
+    if not os.path.exists(LEAVE_FILE):
+        return leaves
+    with open(LEAVE_FILE) as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            try:
+                leaves.add(date.fromisoformat(line))
+            except ValueError:
+                log.warning("Invalid date in leave.txt: %s", line)
+    return leaves
 
 
 def within_window(action: str) -> bool:
@@ -257,6 +275,11 @@ def within_window(action: str) -> bool:
     if today in HOLIDAYS:
         log.info("Skipping clock %s — today is a holiday: %s.", action.upper(), HOLIDAYS[today])
         print(f"Holiday today ({HOLIDAYS[today]}) — no action taken.")
+        return False
+
+    if today in load_leave_dates():
+        log.info("Skipping clock %s — today is a personal leave day.", action.upper())
+        print(f"Personal leave today ({today}) — no action taken.")
         return False
 
     if os.getenv("CI", "false").lower() == "true":

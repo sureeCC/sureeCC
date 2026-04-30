@@ -1,0 +1,4 @@
+# Personal leave dates — one date per line in YYYY-MM-DD format
+# Example:
+# 2026-05-15
+# 2026-06-10
