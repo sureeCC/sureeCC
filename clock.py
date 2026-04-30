@@ -249,7 +249,8 @@ WINDOW_MINUTES = 30  # skip if fired more than this many minutes late
 
 
 def within_window(action: str) -> bool:
-    """Return True if current IST time is within WINDOW_MINUTES of the scheduled hour."""
+    """Return True if current IST time is within WINDOW_MINUTES of the scheduled hour.
+    In CI (GitHub Actions), skip the time window check — workflow file guarantees correct action."""
     now = datetime.now(IST)
     today = now.date()
 
@@ -257,6 +258,10 @@ def within_window(action: str) -> bool:
         log.info("Skipping clock %s — today is a holiday: %s.", action.upper(), HOLIDAYS[today])
         print(f"Holiday today ({HOLIDAYS[today]}) — no action taken.")
         return False
+
+    if os.getenv("CI", "false").lower() == "true":
+        log.info("CI environment — skipping time window check.")
+        return True
 
     scheduled_hour = SCHEDULED_HOURS[action]
     minutes_past = (now.hour - scheduled_hour) * 60 + now.minute
