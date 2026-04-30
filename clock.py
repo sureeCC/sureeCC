@@ -90,7 +90,7 @@ def do_clock_action(action: str) -> bool:
 
         try:
             log.info("Navigating to %s", QANDLE_URL)
-            page.goto(QANDLE_URL, wait_until="networkidle", timeout=30_000)
+            page.goto(QANDLE_URL, wait_until="domcontentloaded", timeout=60_000)
 
             # --- Click Active Directory SSO ---
             page.click('button:has-text("Sign In With Active Directory")')
@@ -117,8 +117,8 @@ def do_clock_action(action: str) -> bool:
                 pass
 
             # --- Wait for redirect back to Qandle dashboard ---
-            page.wait_for_url("**igs.qandle.com**", timeout=40_000)
-            page.wait_for_load_state("networkidle", timeout=30_000)
+            page.wait_for_url("**igs.qandle.com**", timeout=60_000)
+            page.wait_for_load_state("domcontentloaded", timeout=60_000)
 
             # Wait for Angular to render clock buttons via JS (ng-hide uses display:none)
             page.wait_for_function(
