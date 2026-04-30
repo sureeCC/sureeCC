@@ -15,7 +15,7 @@ load_dotenv()
 
 IST = pytz.timezone("Asia/Kolkata")
 QANDLE_URL = "https://igs.qandle.com/#/"
-DRY_RUN = True  # Set to False to enable actual clock actions
+DRY_RUN = False
 
 HOLIDAYS = {
     date(2026,  1, 15): "Uttarayana Punyakala / Makara Sankranti",
