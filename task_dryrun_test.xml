@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>Qandle dry-run wake test — one-time</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <TimeTrigger>
+      <StartBoundary>2026-04-30T11:48:33</StartBoundary>
+      <EndBoundary>2026-04-30T12:05:00</EndBoundary>
+      <Enabled>true</Enabled>
+    </TimeTrigger>
+  </Triggers>
+  <Settings>
+    <WakeToRun>true</WakeToRun>
+    <ExecutionTimeLimit>PT10M</ExecutionTimeLimit>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <StartWhenAvailable>false</StartWhenAvailable>
+    <DeleteExpiredTaskAfter>PT1H</DeleteExpiredTaskAfter>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+  </Settings>
+  <Actions>
+    <Exec>
+      <Command>C:\Users\Suresh\.virtualenvs\bff-service-0G38rcZ1\Scripts\python.exe</Command>
+      <Arguments>D:\local\qandle_clocker\clock.py test</Arguments>
+      <WorkingDirectory>D:\local\qandle_clocker</WorkingDirectory>
+    </Exec>
+  </Actions>
+</Task>
