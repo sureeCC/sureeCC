@@ -1,0 +1,112 @@
+2026-04-29 14:48:33,191  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 14:49:06,178  ERROR  Timeout during clock in: Timeout 20000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "**/overview**" until 'load'
+============================================================ (screenshot saved)
+2026-04-29 14:54:17,457  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 14:54:24,485  INFO  Clicked Active Directory sign-in
+2026-04-29 14:54:26,360  INFO  Submitted email to Microsoft login
+2026-04-29 14:54:27,579  INFO  Submitted password
+2026-04-29 14:54:28,345  INFO  Dismissed stay-signed-in prompt
+2026-04-29 14:54:49,317  ERROR  Timeout during clock in: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Clock In\"), button:has-text(\"Clock Out\")") to be visible
+    - waiting for" https://igs.qandle.com/" navigation to finish...
+    - navigated to "https://igs.qandle.com/#/dashboard"
+    35 × locator resolved to 3 elements. Proceeding with the first one: <button type="button" ng-transclude="" ng-show="clockIn" aria-hidden="true" disabled="disabled" aria-label="Clock In" ng-click="clockInOut(true)" ng-disabled="!canClock || loader" class="md-raised md-primary text-capitalized lm-btn2 white md-button md-ink-ripple ng-hide">…</button>
+ (screenshot saved)
+2026-04-29 14:55:31,168  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 14:55:37,479  INFO  Clicked Active Directory sign-in
+2026-04-29 14:55:39,357  INFO  Submitted email to Microsoft login
+2026-04-29 14:55:40,698  INFO  Submitted password
+2026-04-29 14:55:41,824  INFO  Dismissed stay-signed-in prompt
+2026-04-29 14:56:02,665  ERROR  Timeout during clock in: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("button[aria-label=\"Clock In\"], button[aria-label=\"Clock Out\"]") to be visible
+    - waiting for" https://igs.qandle.com/" navigation to finish...
+    - navigated to "https://igs.qandle.com/#/dashboard"
+    34 × locator resolved to 3 elements. Proceeding with the first one: <button type="button" ng-transclude="" ng-show="clockIn" aria-hidden="true" disabled="disabled" aria-label="Clock In" ng-click="clockInOut(true)" ng-disabled="!canClock || loader" class="md-raised md-primary text-capitalized lm-btn2 white md-button md-ink-ripple ng-hide">…</button>
+ (screenshot saved)
+2026-04-29 14:57:01,162  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 14:57:08,242  INFO  Clicked Active Directory sign-in
+2026-04-29 14:57:10,077  INFO  Submitted email to Microsoft login
+2026-04-29 14:57:11,488  INFO  Submitted password
+2026-04-29 14:57:12,197  INFO  Dismissed stay-signed-in prompt
+2026-04-29 14:57:34,710  ERROR  Timeout during clock in: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("button[aria-label=\"Clock In\"]:visible, button[aria-label=\"Clock Out\"]:visible") to be visible
+ (screenshot saved)
+2026-04-29 14:58:16,106  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 14:58:23,548  INFO  Clicked Active Directory sign-in
+2026-04-29 14:58:25,460  INFO  Submitted email to Microsoft login
+2026-04-29 14:58:26,649  INFO  Submitted password
+2026-04-29 14:58:27,222  INFO  Dismissed stay-signed-in prompt
+2026-04-29 14:58:31,962  INFO  Logged in via Active Directory successfully
+2026-04-29 14:58:31,967  INFO  Already clocked IN — no action taken.
+2026-04-29 15:17:48,102  WARNING  Skipping clock IN — fired 257 min past scheduled time (max allowed: 15 min).
+2026-04-29 15:25:26,248  INFO  [TEST] Running full dry-run flow (time window bypassed).
+2026-04-29 15:25:28,155  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 15:25:34,542  INFO  Clicked Active Directory sign-in
+2026-04-29 15:25:36,391  INFO  Submitted email to Microsoft login
+2026-04-29 15:25:37,765  INFO  Submitted password
+2026-04-29 15:25:38,366  INFO  Dismissed stay-signed-in prompt
+2026-04-29 15:25:42,712  INFO  Logged in via Active Directory successfully
+2026-04-29 15:25:42,717  INFO  Already clocked IN — no action taken.
+2026-04-29 23:04:17,694  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 23:04:26,953  INFO  Clicked Active Directory sign-in
+2026-04-29 23:04:29,477  INFO  Submitted email to Microsoft login
+2026-04-29 23:04:30,912  INFO  Submitted password
+2026-04-29 23:04:31,919  INFO  Dismissed stay-signed-in prompt
+2026-04-29 23:04:36,272  INFO  Logged in via Active Directory successfully
+2026-04-29 23:04:36,975  INFO  Clicked 'Clock Out' button
+2026-04-29 23:04:44,069  INFO  Clock OUT completed at 2026-04-29 23:04:44 IST
+2026-04-29 23:11:46,020  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 23:11:55,861  INFO  Clicked Active Directory sign-in
+2026-04-29 23:11:59,435  INFO  Submitted email to Microsoft login
+2026-04-29 23:12:01,753  INFO  Submitted password
+2026-04-29 23:12:03,627  INFO  Dismissed stay-signed-in prompt
+2026-04-29 23:12:13,268  INFO  Logged in via Active Directory successfully
+2026-04-29 23:12:13,303  INFO  Clicked 'Clock Out' button
+2026-04-29 23:12:21,364  ERROR  Confirmation dialog did not appear or YES button not found — clock action may be incomplete.
+2026-04-29 23:15:52,050  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 23:15:59,418  INFO  Clicked Active Directory sign-in
+2026-04-29 23:16:00,718  INFO  Submitted email to Microsoft login
+2026-04-29 23:16:02,561  INFO  Submitted password
+2026-04-29 23:16:03,131  INFO  Dismissed stay-signed-in prompt
+2026-04-29 23:16:06,416  INFO  Logged in via Active Directory successfully
+2026-04-29 23:16:06,567  INFO  Clicked 'Clock Out' button
+2026-04-29 23:16:14,589  ERROR  Confirmation dialog did not appear or YES button not found — clock action may be incomplete.
+2026-04-29 23:24:14,242  INFO  [FORCE] Running clock OUT (time window bypassed).
+2026-04-29 23:24:15,363  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 23:24:21,500  INFO  Clicked Active Directory sign-in
+2026-04-29 23:24:22,840  INFO  Submitted email to Microsoft login
+2026-04-29 23:24:24,320  INFO  Submitted password
+2026-04-29 23:24:24,713  INFO  Dismissed stay-signed-in prompt
+2026-04-29 23:24:28,812  INFO  Logged in via Active Directory successfully
+2026-04-29 23:24:28,834  INFO  Clicked 'Clock Out' button
+2026-04-29 23:24:36,857  ERROR  YES button not found. Visible buttons: ['menu', 'subject People arrow_drop_down', 'search', 'notifications_active', 'arrow_drop_down', 'settingsMy Account Settings', 'star_border\xa0 Add to Favourites', 'report_problem Report a Problem', 'lock Logout', 'subject\n                                people\n                                arrow_drop_down', 'clear', 'clear', 'Overview', 'My Team', 'My Leave', 'My Time-off', 'My Attendance', 'My Timesheet', 'My Compensation', 'Expense Management', 'My OKR', 'My Performance', 'PIP Follower', 'My Task Management', 'My Productivity', 'Orientation', 'Orientation POC', 'Recruitment', 'External Recruiter', 'Intranet', 'My Learnings', 'My Assets', 'My Grievances', 'My Exit', 'Alerts', 'My Calendar', 'Mark Attendance', 'My PIP', 'People', 'Knowledge Base', 'Related Portals', 'User Management', 'Leave & Holidays', 'Attendance', 'Timesheet Admin', 'Timesheet Manager', 'Timesheet Follower', 'Payroll', 'Direct Bank Tranfer', 'Travel & Expenses', 'Travel Planner', 'OKR', 'Performance', 'desktop_windows\n                Productivity', 'Recruitment Admin', 'On-boarding', 'No Dues Manager', 'Orientation Admin', 'Documents & Letters', 'L&D Manager', 'L&D Admin', 'Asset Manager', 'Asset Admin', 'Grievances Manager', 'Grievances Admin', 'Exit Admin', 'Announcements', 'library_books\n                 Daily Wages', 'Shift Planner', 'PIP Admin', 'OnGrid', 'Reports', 'content_copy\n                Compliance Report', 'Polls And Surveys', 'Budgeting and Resources', 'Billing', 'Clock In', 'Start Break', 'Stop Break', 'Clock Out', '', '', '', '', 'Cancel', 'Clock In', 'No', 'Yes', 'arrow_drop_up', 'arrow_drop_up', '', '', '', '', '', '', '', '', '', 'Raise Request', 'Raise Request', '', 'Raise Request', 'Raise Request', '', 'Raise Request', 'Raise Request', '', 'Raise Request', 'Raise Request', '', 'Raise Request', 'Raise Request', '', '', '', 'Cancel', 'Next', '', '', '', '', 'Cancel', 'Submit', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', 'arrow_drop_up', '', 'View FPR_ Annual Appraisal Cycle_2025-26', 'Your Tasks', 'NO', 'YES']
+2026-04-29 23:25:25,112  INFO  [FORCE] Running clock OUT (time window bypassed).
+2026-04-29 23:25:26,175  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-29 23:25:33,597  INFO  Clicked Active Directory sign-in
+2026-04-29 23:25:34,990  INFO  Submitted email to Microsoft login
+2026-04-29 23:25:36,248  INFO  Submitted password
+2026-04-29 23:25:36,827  INFO  Dismissed stay-signed-in prompt
+2026-04-29 23:25:40,905  INFO  Logged in via Active Directory successfully
+2026-04-29 23:25:40,921  INFO  Clicked 'Clock Out' button
+2026-04-29 23:25:41,088  INFO  Clicked YES on confirmation dialog
+2026-04-29 23:25:45,091  INFO  Clock OUT completed at 2026-04-29 23:25:45 IST
+2026-04-30 11:26:58,072  WARNING  Skipping clock IN — fired 26 min past scheduled time (max allowed: 15 min).
+2026-04-30 11:43:06,681  INFO  [TEST] Running full dry-run flow (time window bypassed).
+2026-04-30 11:43:17,865  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-30 11:43:40,961  INFO  Clicked Active Directory sign-in
+2026-04-30 11:43:43,328  INFO  Submitted email to Microsoft login
+2026-04-30 11:43:44,700  INFO  Submitted password
+2026-04-30 11:43:45,970  INFO  Dismissed stay-signed-in prompt
+2026-04-30 11:43:49,357  INFO  Logged in via Active Directory successfully
+2026-04-30 11:43:49,363  INFO  Already clocked IN — no action taken.
+2026-04-30 11:49:52,990  INFO  [TEST] Running full dry-run flow (time window bypassed).
+2026-04-30 11:49:55,777  INFO  Navigating to https://igs.qandle.com/#/
+2026-04-30 11:50:12,588  INFO  Clicked Active Directory sign-in
+2026-04-30 11:50:14,156  INFO  Submitted email to Microsoft login
+2026-04-30 11:50:15,585  INFO  Submitted password
+2026-04-30 11:50:16,173  INFO  Dismissed stay-signed-in prompt
